@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""mult"""
 
 
 import numpy as np
