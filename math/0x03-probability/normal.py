@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-normal distribution probability class
+normal distribution probability class py module
 """
 
 
 class Normal:
-    """normal distribution proba class"""
+    """normal distribution probability class"""
     def __init__(self, data=None, mean=0., stddev=1.):
-        """initializtion"""
+        """initializtion of the class with mean and stddev"""
         self.stddev = float(stddev)
         self.mean = float(mean)
         if data is None:
