@@ -39,11 +39,11 @@ class Normal:
         ex = -((1/2) * (((x - self.mean) / self.stddev) ** 2))
         return ((1 / (self.stddev * ((2 * pi) ** 0.5))) * (e ** ex))
 
-     def cdf(self, x):
-         """returns cdf"""
-         e = 2.7182818285
-         pi = 3.1415926536
-         ex = (x - self.mean) / (self.stddev * (2 ** 0.5))
-         er = (2 / (pi ** 0.5)) * (ex - ((ex ** 3) / 3) + ((ex ** 5) / 10) -
-                                   ((ex ** 7) / 42) + ((ex ** 9) / 216))
-         return ((1/2) * (1 + er))
+    def cdf(self, x):
+        """returns cdf"""
+        e = 2.7182818285
+        pi = 3.1415926536
+        ex = (x - self.mean) / (self.stddev * (2 ** 0.5))
+        er = (2 / (pi ** 0.5)) * (ex - ((ex ** 3) / 3) + ((ex ** 5) / 10) -
+                                  ((ex ** 7) / 42) + ((ex ** 9) / 216))
+        return ((1/2) * (1 + er))
