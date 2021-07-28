@@ -24,7 +24,7 @@ class Poisson:
         if k < 0:
             return 0
         k = int(k)
-            fact = 1
+        fact = 1
         for i in range(1, k+1):
             fact *= i
         p = ((2.7182818285**-(self.lambtha))*(self.lambtha**k)) / fact
