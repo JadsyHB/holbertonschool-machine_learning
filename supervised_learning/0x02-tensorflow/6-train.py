@@ -42,7 +42,7 @@ def train(X_train, Y_train, X_valid, Y_valid, layer_sizes, activations, alpha,
                 [loss, acc],
                 feed_dict={x: X_valid, y: Y_valid}
             )
-            if i % 100 or i == iterations:
+            if i % 100 == 0 or i == iterations:
                 print("After {} iterations:".format(i))
                 print("\tTraining Cost: {}".format(c_train))
                 print("\tTraining Accuracy: {}".format(acc_train))
