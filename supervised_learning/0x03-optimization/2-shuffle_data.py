@@ -24,9 +24,3 @@ Y = np.array([[11, 12],
               [15, 16],
               [17, 18],
               [19, 20]])
-
-np.random.seed(0)
-X_shuffled, Y_shuffled = shuffle_data(X, Y)
-
-print(X_shuffled)
-print(Y_shuffled)
