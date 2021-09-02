@@ -2,7 +2,6 @@
 """perform a valid convolution"""
 
 
-import matplotlib.pyplot as plt
 import numpy as np
 
 
