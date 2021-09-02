@@ -10,7 +10,7 @@ def convolve_grayscale(images, kernel, padding='same', stride=(1, 1)):
     m, h, w = images.shape[0], images.shape[1], images.shape[2]
     kh, kw = kernel.shape[0], kernel.shape[1]
     pad_w, pad_h = 0, 0
-    sh, sw = stride[0]. stride[1]
+    sh, sw = stride[0], stride[1]
     if padding == "same":
         pad_h = int((((h - 1) * sh + kh - h) / 2) + 1)
         pad_w = int((((w - 1) * sw + kw - w) / 2) + 1)
