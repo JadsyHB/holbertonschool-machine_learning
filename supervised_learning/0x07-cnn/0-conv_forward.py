@@ -13,7 +13,7 @@ def conv_forward(A_prev, W, b, activation, padding='same', stride=(1, 1)):
     if padding == 'same':
         ph = int(np.ceil((((h_prev - 1) * sh + kh - h_prev) / 2)))
         pw = int(np.ceil((((w_prev - 1) * sw + kw - w_prev) / 2)))
-    pw, ph = 0
+    pw, ph = 0, 0
     img_pad = np.pad(A_prev,
                      pad_width=((0, 0), (ph, ph), (pw, pw), (0, 0)),
                      mode='constant')
