@@ -27,4 +27,5 @@ def inception_block(A_prev, filters):
         pool_size=[3, 3], strides=(1, 1), padding='same')(A_prev)
     lpP = K.layers.Conv2D(filters=FPP, kernel_size=1, padding='same',
                           activation=active, kernel_initializer=init)(lp)
-    return K.layers.concatenate([c_1, dc_1, dc_2, lpP])
+    mid = K.layers.concatenate([c_1, dc_1, dc_2, lpP])
+    return mid
