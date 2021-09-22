@@ -33,7 +33,7 @@ if __name__ == '__main__':
     X = K.layers.Dropout(0.2)(K.layers.Dense(
         500, activation=act)(K.layers.Flatten()(DenseNet121(resized_ins, training=False))))
     outs = K.layers.Dense(10, activation='softmax')(X)
-    model = K.Model(inputs=inputs, outputs=outputs)
+    model = K.Model(inputs=ins, outputs=outs)
 
     DenseNet121.trainable = False
 
